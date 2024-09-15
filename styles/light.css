@@ -52,4 +52,8 @@
     .theme_light .header__rec {
       visibility: hidden;
     }
+
+    .page {
+      background-image: var(--bg-image);
+    }
 }
