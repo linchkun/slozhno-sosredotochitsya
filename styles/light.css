@@ -37,10 +37,10 @@
     --menu-color: #353430;
     --decor-color: #353430;
     --menu-focus-color: #353430;
-    --menu-hover-color: #353430;
+    --menu-hover-color: rgb(53, 52, 48, 0.40);
     --main-fs: 18px;
     --bg-img: url("../images/cover-image-light.png");
-    --bg-color: #000028;
+    --bg-color: #FFF1F7;
     --title-color: #353430;
     --section-text-color: #353430;
     --link-border: #353430;
@@ -51,9 +51,5 @@
 
     .theme_light .header__rec {
       visibility: hidden;
-    }
-
-    .page {
-      background-image: var(--bg-image);
     }
 }
