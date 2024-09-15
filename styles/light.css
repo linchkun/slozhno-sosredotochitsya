@@ -34,7 +34,7 @@
     --accent-color: #FF8DCB;
     --shadow-color: #FF0070;
     --main-font-family: IBM Plex mono, monospace;
-    --menu-color: #353430;;
+    --menu-color: #353430;
     --decor-color: #353430;
     --menu-focus-color: #353430;
     --menu-hover-color: #353430;
@@ -46,8 +46,8 @@
     --link-border: #353430;
     --link-shadow-color: #FF8DCB;
     --decoration-color: #353430;
-    --border-color: #353430; 
-    }
+    --border-color: #353430;
+  }
 
     .theme_light .header__rec {
       visibility: hidden;
