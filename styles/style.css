@@ -61,10 +61,11 @@
   background-color: var(--accent-color);
   width: 9px;
   height: 9px;
-  fill: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
   border-radius: 50%;
-  margin: 8px;
+  top: 8px;
+  left: 42px;
 }
 
 .header__main-title {
@@ -73,7 +74,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
-  line-height: 95px;
+  line-height: 95.7px;
 }
 
 .header__theme-menu {
@@ -88,7 +89,7 @@
 
 .header__theme-menu-list {
   display: grid;
-  gap: 15px;
+  gap: 13px;
 }
 
 .header__theme-menu-button {
@@ -96,17 +97,16 @@
   cursor: pointer;
   text-transform: lowercase;
   border: none;
+  padding: 3px 13px; 
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--border-color);
   pointer-events: none;
-  padding: 3px 13px;
 }
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--menu-hover-color);
-  padding: 3px 13px;
 }
 
 .header__theme-menu-button:focus {
@@ -114,10 +114,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
   outline: none;
-  border-bottom: 1px solid var(--menu-focus-color);
-  padding-bottom: 5px;
-  width: 70px;
 }
 
 .title-decor {
@@ -140,14 +138,14 @@
   gap: 20px;
 }
 
-.section__list {
-  display: grid;
-  gap: 20px;
-}
-
-.list__item {
+.why-list {
   display: grid;
   gap: 10px;
+}
+
+.why-box {
+  display: grid;
+  gap: 20px;
 }
 
 .section__main-title {
@@ -183,38 +181,18 @@
   border: 1px solid var(--link-border);
 }
 
-.section__what {
+.section-gaps-second {
   display: grid;
   gap: 20px;
 }
 
-.section__how {
+.section-gaps-first {
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
-.advices-box {
-  display: grid;
-  gap: 20px;
-}
-
-.section__advices {
-  color: var(--decor-color);
-  background-color: var(--accent-color);
-  font-family: var(--main-font-family);
+.title__advices {
   font-weight: 400;
-  font-size: var(--main-fs);
-  line-height: 23.4px;
-}
-
-.section__gallery {
-  display: grid;
-  gap: 10px;
-}
-
-.gallery-box {
-  display: grid;
-  gap: 10px;
 }
 
 .picture {
@@ -243,32 +221,10 @@
   line-height: 95px;
 }
 
-.footer__decorated-zone::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--decoration-color);
-  border-right: 1px solid var(--decoration-color);
-  right: 10px;
-  top: 10px;
-}
-
-.footer__decorated-zone::after {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--decoration-color);
-  border-left: 1px solid var(--decoration-color);
-  bottom: 10px;
-  left: 10px;
-}
-
 @media (width >= 768px) {
   
   .decorated-zone::before {
-    top: 25px;
+    top: 20px;
     right: 20px;
   }
 
@@ -278,14 +234,12 @@
   }
 
   .header__rec {
-    top: 25px;
-    right: 48px;
+    top: 20px;
+    right: 50px;
   }
 
   .header {
     padding: 20px;
-    height: 100vh;
-    display: grid;
     justify-items: start;
   }
 
@@ -299,15 +253,13 @@
   }
 
   .content {
-    display: grid;
     gap: 80px;
     padding: 60px 20px;
   }
 
-  .section__why {
+  .section__grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .what-title {
@@ -315,24 +267,13 @@
     grid-template-columns: repeat(1, 236px);
   }
 
-  .section__how {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .advices-box {
-    display: grid;
+  .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
   .section__gallery {
     display: grid;
-    gap: 20px;
-  }
-
-  .gallery-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
@@ -364,10 +305,6 @@
 
 @media (width >= 1024px) {
 
-  .header {
-    height: 100vh;
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -376,7 +313,6 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    gap: 23px;
     align-items: center;
   }
 
@@ -385,15 +321,17 @@
     margin-top: 15px;
   }
 
-  .what__section-list {
+  .section__why {
+    gap: 10px;
+  }
+
+  .what-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     align-items: start;
   }
 
   .what-title {
-    display: grid;
     grid-template-columns: repeat(1, 315px);
   }
 
