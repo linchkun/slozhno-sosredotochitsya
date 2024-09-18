@@ -58,7 +58,6 @@
 .header__rec::after {
   position: absolute;
   content: "";
-  background-color: var(--accent-color);
   width: 9px;
   height: 9px;
   background-color: var(--accent-color);
@@ -97,7 +96,7 @@
   cursor: pointer;
   text-transform: lowercase;
   border: none;
-  padding: 3px 13px; 
+  padding: 3px 13px;
 }
 
 .header__theme-menu-button_active {

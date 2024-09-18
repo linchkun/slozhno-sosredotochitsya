@@ -7,13 +7,10 @@
 .page.theme_light {
   --header-title-color: #FFC2E6;
   --accent-color: #FF8DCB;
-  --shadow-color: #FF0070;
-  --main-font-family: IBM Plex mono, monospace;
   --menu-color: #353430;
   --decor-color: #353430;
   --menu-focus-color: #353430;
   --menu-hover-color: rgb(53, 52, 48, 0.40);
-  --main-fs: 18px;
   --bg-img: url("../images/cover-image-light.png");
   --bg-color: #FFF1F7;
   --title-color: #353430;
@@ -32,13 +29,10 @@
   :root {
     --header-title-color: #FFC2E6;
     --accent-color: #FF8DCB;
-    --shadow-color: #FF0070;
-    --main-font-family: IBM Plex mono, monospace;
     --menu-color: #353430;
     --decor-color: #353430;
     --menu-focus-color: #353430;
     --menu-hover-color: rgb(53, 52, 48, 0.40);
-    --main-fs: 18px;
     --bg-img: url("../images/cover-image-light.png");
     --bg-color: #FFF1F7;
     --title-color: #353430;
@@ -48,8 +42,4 @@
     --decoration-color: #353430;
     --border-color: #353430;
   }
-
-    .theme_light .header__rec {
-      visibility: hidden;
-    }
 }
