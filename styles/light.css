@@ -43,7 +43,7 @@
     --border-color: #353430;
   }
 
-  .theme_light .header__rec { 
-    visibility: hidden; 
+  .theme_light .header__rec {
+    visibility: hidden;
   }
 }
