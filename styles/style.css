@@ -73,7 +73,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
-  line-height: 95.7px;
+  line-height: 82.5%;
 }
 
 .header__theme-menu {
@@ -126,25 +126,24 @@
   line-height: 23.4px;
 }
 
-.content {
-  display: grid;
-  gap: 50px;
-  padding: 40px 10px;
-}
+/** общие отступы **/
 
-.section__why {
-  display: grid;
-  gap: 20px;
-}
-
-.why-list {
+.section-gaps-first {
   display: grid;
   gap: 10px;
 }
 
-.why-box {
+.section-gaps-second {
   display: grid;
   gap: 20px;
+}
+
+/** конец общих отступов **/
+
+.content {
+  display: grid;
+  gap: 50px;
+  padding: 40px 10px;
 }
 
 .section__main-title {
@@ -180,18 +179,12 @@
   border: 1px solid var(--link-border);
 }
 
-.section-gaps-second {
-  display: grid;
-  gap: 20px;
-}
-
-.section-gaps-first {
-  display: grid;
-  gap: 10px;
-}
-
 .title__advices {
   font-weight: 400;
+}
+
+.gallery-box {
+  display: grid;
 }
 
 .picture {
@@ -256,20 +249,24 @@
     padding: 60px 20px;
   }
 
-  .section__grid {
+  /** общий грид для секций почему и как **/
+
+  .how-and-why-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+
+  /** конец общего грида **/
 
   .what-title {
     display: grid;
     grid-template-columns: repeat(1, 236px);
   }
 
-  .gallery-box {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+  .gallery-box { 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+  } 
 
   .section__gallery {
     display: grid;
@@ -304,6 +301,7 @@
 
 @media (width >= 1024px) {
 
+
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -317,25 +315,19 @@
 
   .header__desc {
     margin-inline-start: 495px;
-    margin-top: 15px;
-  }
-
-  .section__why {
-    gap: 10px;
-  }
-
-  .what-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
   }
 
   .what-title {
     grid-template-columns: repeat(1, 315px);
   }
 
-  .section__how {
+  .what-box { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    align-items: start; 
+  } 
+
+  .why-and-how-gap {
     gap: 10px;
   }
-
 }

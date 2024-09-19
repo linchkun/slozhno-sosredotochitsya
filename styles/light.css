@@ -42,4 +42,8 @@
     --decoration-color: #353430;
     --border-color: #353430;
   }
+
+  .theme_light .header__rec { 
+    visibility: hidden; 
+  }
 }
