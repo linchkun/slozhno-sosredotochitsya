@@ -128,12 +128,12 @@
 
 /** общие отступы **/
 
-.section-gaps-first {
+.section_gap_small {
   display: grid;
   gap: 10px;
 }
 
-.section-gaps-second {
+.section_gap_medium {
   display: grid;
   gap: 20px;
 }
@@ -181,10 +181,6 @@
 
 .title__advices {
   font-weight: 400;
-}
-
-.gallery-box {
-  display: grid;
 }
 
 .picture {
@@ -251,7 +247,6 @@
   /** общий грид для секций почему и как **/
 
   .how-and-why-grid {
-    display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
@@ -262,13 +257,13 @@
     grid-template-columns: repeat(1, 236px);
   }
 
-  .gallery-box {
-    grid-template-columns: repeat(3, 1fr);
+  .section__gallery {
+    display: grid;
     gap: 20px;
   }
 
-  .section__gallery {
-    display: grid;
+  .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
@@ -318,7 +313,6 @@
   }
 
   .what-box {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
